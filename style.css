@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');
+body {
+background-color: #191919;
+}
+h1 {
+    color: #FAFDFA;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+}
+h2 {
+    color: #2696F4;
+    font-family: 'Fira Code';
+    font-weight: 278;
+    font-size: 24px;
+}
+p {
+    color: #FAFDFA;
+    font-family: 'Nunito', sans-serif;
+}
+#name {
+    color: #2696F4;
+}
