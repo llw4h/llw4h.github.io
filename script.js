@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
     function typeWriter(text, i, fnCallback) {
         if (i < (text.length)) {
-            document.querySelector("#type").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+            document.querySelector("#position").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
 
             setTimeout(function () {
                 typeWriter(text, i + 1, fnCallback)

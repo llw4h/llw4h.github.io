@@ -17,11 +17,48 @@ p {
     font-family: 'Nunito', sans-serif;
 }
 
+a img.hover {
+    display: none;
+}
+a img.default {
+    display: inherit;
+}
+a:hover img.hover {
+    display: inherit;
+}
+a:hover img.default {
+    display: none;
+}
+
+#menu-icons{
+    margin-top: 50%;
+}
+.default , .hover{
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+}
+
+
+#home, #about, #projects {
+    margin-bottom: 5%;
+}
+
+#right-side{
+    margin-left: 90%;
+    position: fixed;
+    top: 75%;
+}
+#menu {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 #name {
     color: #0831FF;
 }
 
-#type {
+#position {
     /* filter: drop-shadow(2px 2px 6px #0831FF); */
     font-family: 'Roboto Mono', monospace;
     color: #0831FF;
@@ -44,12 +81,7 @@ span {
     }
 }
 
-#github {
-    margin-left: 85%;
-    margin-top: 2%;
-}
-
-#github a {
+#about a, #projects a, #home a {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #BDFF60 50%);
     background-position: -0% 0;
     background-size: 200% auto;
@@ -60,7 +92,7 @@ span {
     font-family: 'Roboto Mono', monospace;
 }
 
-#github a:hover {
+#about a:hover, #projects a:hover, #home a:hover {
     background-position: -99.99% 0;
     color: #0831FF;
 }
@@ -77,6 +109,7 @@ span {
 #contact a {
     text-decoration: none;
     color: #191919;
+    text-shadow: 1px 1px 1px #bdff58;
 }
 
 #contact:hover {

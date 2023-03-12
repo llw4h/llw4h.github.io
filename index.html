@@ -9,28 +9,56 @@
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script type="text/javascript" src="script.js"></script>
-
 </head>
 
 <body>
-    <div id="github">
-        <p style="display: inline; padding: 2%;">[</p>
-        <a href="https://github.com/llw4h">github</a>
-        <p style="display: inline; padding: 2%;">]</p>
-    </div>
+    <!-- <div id="separator"> -->
 
-    <div style="margin-left: 10%; margin-top: 15%; margin-right: 27%;">
-        <head>
+    <div id="left-side" style="margin-left: 10%; margin-top: 15%; margin-right: 27%; margin-bottom: 15%;">
+        <a id="home-part">
             <h1 style="display: inline;">Hi, I'm </h1>
             <h1 id="name" style="display: inline;">Lulwah</h1>
-        </head>
-        <section>
-            <h2 id="type">Software Engineer</h2>
-            <p id="summary">I’m a recent Computer Science graduate specializing in Software Engineering. Currently, I’m interested in automation, app development, web development and everything in between.</p>
-            <button id="contact" type="button"><a href="">Contact me</a></button>
+            <section>
+                <h2 id="position">Software Engineer</h2>
+                <p id="summary">I’m a recent Computer Science graduate specializing in Software Engineering. Currently,
+                    I’m
+                    interested in automation, app development, web development and everything in between.</p>
+                <button id="contact" type="button"><a href="mailto:lmnerpio@gmail.com">Say hello!</a></button>
+            </section>
+        </a>
     </div>
-    </section>
 
+    <div id="right-side">
+        <div id="menu">
+            <div id="home">
+                <p style="display: inline;">[</p>
+                <a href="#home-part">home</a>
+                <p style="display: inline;">]</p>
+            </div>
+            <div id="about">
+                <p style="display: inline;">[</p>
+                <a href="">about</a>
+                <p style="display: inline;">]</p>
+            </div>
+            <div id="projects">
+                <p style="display: inline;">[</p>
+                <a href="">projects</a>
+                <p style="display: inline;">]</p>
+            </div>
+            <div id="menu-icons">
+                <a target="_blank" href="https://github.com/llw4h">
+                    <img class="default" src="images/github.png" alt="github" />
+                    <img class="hover" src="images/github_hover.png" alt="github" />
+                </a>
+                <a href="mailto:lmnerpio@gmail.com">
+                    <img class="default" src="images/mail.png" alt="email" />
+                    <img class="hover" src="images/mail_hover.png" alt="email" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
 </body>
 
 </html>
