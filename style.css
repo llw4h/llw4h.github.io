@@ -12,6 +12,13 @@ h1 {
     font-size: 44px;
 }
 
+h3 {
+    color: #191919;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
 p {
     color: #191919;
     font-family: 'Nunito', sans-serif;
@@ -33,10 +40,17 @@ a:hover img.default {
 #menu-icons{
     margin-top: 50%;
 }
+
+#menu-icons a{
+    text-decoration: none;
+}
+
 .default , .hover{
-    height: 25px;
-    width: 25px;
-    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 5%;
+    /* margin-bottom: 25%; */
+    /* display: inline-block; */
 }
 
 
@@ -118,6 +132,10 @@ span {
     transition: 0.3s background; */
 }
 
-/* #contact a:hover {
-    color: #0831FF;
-} */
+#aboutMe{
+    margin-top: 5%;
+}
+
+#home-part{
+    margin-bottom: 30%;
+}

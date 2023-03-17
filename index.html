@@ -2,63 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lulwah</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
-    <!-- <div id="separator"> -->
-
-    <div id="left-side" style="margin-left: 10%; margin-top: 15%; margin-right: 27%; margin-bottom: 15%;">
-        <a id="home-part">
-            <h1 style="display: inline;">Hi, I'm </h1>
-            <h1 id="name" style="display: inline;">Lulwah</h1>
-            <section>
+    <div id="left-side" style="
+        margin-left: 10%;
+        margin-top: 15%;
+        margin-right: 27%;
+        margin-bottom: 15%;">
+        <section id="home-part">
+            <article>
+            <h1 style="display: inline">Hi, I'm </h1>
+            <h1 id="name" style="display: inline">Lulwah</h1>
                 <h2 id="position">Software Engineer</h2>
-                <p id="summary">I’m a recent Computer Science graduate specializing in Software Engineering. Currently,
-                    I’m
-                    interested in automation, app development, web development and everything in between.</p>
-                <button id="contact" type="button"><a href="mailto:lmnerpio@gmail.com">Say hello!</a></button>
-            </section>
-        </a>
+                <p id="summary">
+                    I’m a recent Computer Science graduate specializing in Software
+                    Engineering. Currently, I’m interested in automation, app
+                    development, web development and everything in between.
+                </p>
+                <button id="contact" type="button">
+                    <a
+                        href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Say
+                        hello!</a>
+                </button>
+            </article>
+        </section>
+        <section id="aboutMe">
+            <article>
+                <h3>About Me</h3>
+                <p>
+                    Ipsum laborum quis velit ullamco. Enim do officia tempor quis amet
+                    consectetur. Nostrud ea magna ut eiusmod ad sint minim. Lorem non
+                    commodo enim adipisicing. Quis qui nisi in deserunt voluptate.
+                    Exercitation proident cupidatat nisi cupidatat incididunt.
+                </p>
+                <p>
+                    Aute quis nisi commodo incididunt nostrud excepteur exercitation eu
+                    pariatur proident enim anim. Ut proident mollit aliquip magna amet
+                    aute excepteur do proident esse excepteur officia culpa excepteur.
+                    Proident sunt tempor veniam ut elit sint aliqua. Officia duis
+                    voluptate culpa ex mollit et nostrud id.
+                </p>
+            </article>
+        </section>
     </div>
 
     <div id="right-side">
-        <div id="menu">
+        <nav id="menu">
             <div id="home">
-                <p style="display: inline;">[</p>
-                <a href="#home-part">home</a>
-                <p style="display: inline;">]</p>
+                <p style="display: inline">[</p>
+                <a href="#top">home</a>
+                <p style="display: inline">]</p>
             </div>
             <div id="about">
-                <p style="display: inline;">[</p>
-                <a href="">about</a>
-                <p style="display: inline;">]</p>
+                <p style="display: inline">[</p>
+                <a href="">about me</a>
+                <p style="display: inline">]</p>
             </div>
             <div id="projects">
-                <p style="display: inline;">[</p>
+                <p style="display: inline">[</p>
                 <a href="">projects</a>
-                <p style="display: inline;">]</p>
+                <p style="display: inline">]</p>
             </div>
             <div id="menu-icons">
                 <a target="_blank" href="https://github.com/llw4h">
                     <img class="default" src="images/github.png" alt="github" />
                     <img class="hover" src="images/github_hover.png" alt="github" />
                 </a>
-                <a href="mailto:lmnerpio@gmail.com">
+                <a
+                    href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                    <!-- note to future self: the email is encrypted with something, idk what specifically but prob something about character ascii conversion; supposedly good for hiding from email scrappers-->
                     <img class="default" src="images/mail.png" alt="email" />
                     <img class="hover" src="images/mail_hover.png" alt="email" />
                 </a>
             </div>
-        </div>
+        </nav>
     </div>
-
-    <!-- </div> -->
 </body>
 
 </html>
