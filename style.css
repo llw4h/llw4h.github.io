@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: #FAFDFA;
+    background-color: #f6f6f6;
 }
 
 h1 {
@@ -25,15 +25,21 @@ h3 {
     color: #0831FF;
 }
 
+h4 {
+    color: #191919;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 22px;
+}
 p,
 li {
     color: #191919;
     font-family: 'Nunito', sans-serif;
+    font-size: 18px;
 }
 
 ul {
     column-count: 2;
-    margin-right: 60%;
+    margin-right: 54%;
 }
 
 a img.hover {
@@ -80,7 +86,7 @@ a:hover img.default {
     margin-left: 10%;
     margin-top: 15%;
     margin-right: 27%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 #right-side {
@@ -120,6 +126,7 @@ span {
         border-color: transparent;
     }
 }
+
 #about a,
 #projects a,
 #home a {
@@ -165,11 +172,11 @@ span {
 
 #about-me {
     margin-top: 5%;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 #home-part {
-    margin-bottom: 35%;
+    margin-bottom: 26%;
 }
 
 
@@ -199,4 +206,90 @@ li::marker {
 
 #active_home {
     display: none;
+}
+
+/* test */
+/*
+ CSS for the main interaction
+*/
+.tabset>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+    display: block;
+}
+
+
+.tabset>label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tabset>label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label {
+    color: #0831FF;
+}
+
+.tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+    background: #0831FF;
+}
+
+.tabset>input:checked+label {
+    border-color: #ccc;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+/*
+   Demo purposes only
+  */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
+.tabset {
+    max-width: 65em;
+}
+
+label {
+    font-family: 'Roboto Mono', sans-serif;
 }
