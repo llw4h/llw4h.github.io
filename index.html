@@ -12,20 +12,15 @@
 </head>
 
 <body>
-    <div id="left-side" style="
-        margin-left: 10%;
-        margin-top: 15%;
-        margin-right: 27%;
-        margin-bottom: 15%;">
+    <div id="left-side">
         <section id="home-part">
             <article>
-            <h1 style="display: inline">Hi, I'm </h1>
-            <h1 id="name" style="display: inline">Lulwah</h1>
+                <h1 style="display: inline">Hi, I'm </h1>
+                <h1 id="name" style="display: inline">Lulwah</h1>
                 <h2 id="position">Software Engineer</h2>
                 <p id="summary">
-                    I’m a recent Computer Science graduate specializing in Software
-                    Engineering. Currently, I’m interested in automation, app
-                    development, web development and everything in between.
+                    I’m a recent Computer Science graduate specializing in Software Engineering. Currently, I’m
+                    interested in automation, full-stack development, artificial intelligence and everything in between.
                 </p>
                 <button id="contact" type="button">
                     <a
@@ -34,22 +29,36 @@
                 </button>
             </article>
         </section>
-        <section id="aboutMe">
-            <article>
-                <h3>About Me</h3>
+        <section>
+            <article id="about-me">
+                <h3>[about me]</h3>
+                <p id="arabic">انا اسمي لولوة</p>
                 <p>
-                    Ipsum laborum quis velit ullamco. Enim do officia tempor quis amet
-                    consectetur. Nostrud ea magna ut eiusmod ad sint minim. Lorem non
-                    commodo enim adipisicing. Quis qui nisi in deserunt voluptate.
-                    Exercitation proident cupidatat nisi cupidatat incididunt.
-                </p>
+                    My name is <b>Lulwah</b>. It means pearl in Arabic.</p>
+                <p>I'm a Software Engineer in the Philippines. I recently graduated with a Bachelor of Science in
+                    <b>Computer Science with specialization in Software Engineering</b> from Far Eastern University
+                    Alabang. </p>
                 <p>
-                    Aute quis nisi commodo incididunt nostrud excepteur exercitation eu
-                    pariatur proident enim anim. Ut proident mollit aliquip magna amet
-                    aute excepteur do proident esse excepteur officia culpa excepteur.
-                    Proident sunt tempor veniam ut elit sint aliqua. Officia duis
-                    voluptate culpa ex mollit et nostrud id.
+                    <b>I'm currently looking
+                        for opportunities to work on projects that will help me grow as a developer.</b>
                 </p>
+                <p><b>Technologies I've worked with:</b></p>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>Git</li>
+                    <li>C#</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <article id="projects">
+                <h3>[projects]</h3>
+                <p>Coming soon!</p>
             </article>
         </section>
     </div>
@@ -63,12 +72,12 @@
             </div>
             <div id="about">
                 <p style="display: inline">[</p>
-                <a href="">about me</a>
+                <a href="#about-me">about me</a>
                 <p style="display: inline">]</p>
             </div>
             <div id="projects">
                 <p style="display: inline">[</p>
-                <a href="">projects</a>
+                <a href="#projects">projects</a>
                 <p style="display: inline">]</p>
             </div>
             <div id="menu-icons">
@@ -81,6 +90,10 @@
                     <!-- note to future self: the email is encrypted with something, idk what specifically but prob something about character ascii conversion; supposedly good for hiding from email scrappers-->
                     <img class="default" src="images/mail.png" alt="email" />
                     <img class="hover" src="images/mail_hover.png" alt="email" />
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/lulwah-n-4241b0244/">
+                    <img class="default" src="images/linkedin.png" alt="linkedin" />
+                    <img class="hover" src="images/linkedin_hover.png" alt="linkedin" />
                 </a>
             </div>
         </nav>

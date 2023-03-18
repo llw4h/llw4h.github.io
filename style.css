@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #FAFDFA;
@@ -15,37 +20,48 @@ h1 {
 h3 {
     color: #191919;
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bolder;
+    color: #0831FF;
 }
 
-p {
+p,
+li {
     color: #191919;
     font-family: 'Nunito', sans-serif;
+}
+
+ul {
+    column-count: 2;
+    margin-right: 60%;
 }
 
 a img.hover {
     display: none;
 }
+
 a img.default {
     display: inherit;
 }
+
 a:hover img.hover {
     display: inherit;
 }
+
 a:hover img.default {
     display: none;
 }
 
-#menu-icons{
+#menu-icons {
     margin-top: 50%;
 }
 
-#menu-icons a{
+#menu-icons a {
     text-decoration: none;
 }
 
-.default , .hover{
+.default,
+.hover {
     height: 24px;
     width: 24px;
     margin-right: 5%;
@@ -54,15 +70,25 @@ a:hover img.default {
 }
 
 
-#home, #about, #projects {
+#home,
+#about,
+#projects {
     margin-bottom: 5%;
 }
 
-#right-side{
+#left-side {
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-right: 27%;
+    margin-bottom: 15%;
+}
+
+#right-side {
     margin-left: 90%;
     position: fixed;
     top: 75%;
 }
+
 #menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -94,8 +120,9 @@ span {
         border-color: transparent;
     }
 }
-
-#about a, #projects a, #home a {
+#about a,
+#projects a,
+#home a {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, #BDFF60 50%);
     background-position: -0% 0;
     background-size: 200% auto;
@@ -106,10 +133,14 @@ span {
     font-family: 'Roboto Mono', monospace;
 }
 
-#about a:hover, #projects a:hover, #home a:hover {
+#about a:hover,
+#projects a:hover,
+#home a:hover {
     background-position: -99.99% 0;
     color: #0831FF;
 }
+
+
 
 #contact {
     padding: 1%;
@@ -132,10 +163,40 @@ span {
     transition: 0.3s background; */
 }
 
-#aboutMe{
+#about-me {
     margin-top: 5%;
+    margin-bottom: 15%;
 }
 
-#home-part{
-    margin-bottom: 30%;
+#home-part {
+    margin-bottom: 35%;
+}
+
+
+/**
+ * Disable smooth scrolling when users have prefers-reduced-motion enabled
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+#wave {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+#arabic {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-size: 20px;
+}
+
+li::marker {
+    color: #0831FF;
+}
+
+#active_home {
+    display: none;
 }
