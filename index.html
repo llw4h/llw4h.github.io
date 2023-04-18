@@ -10,38 +10,42 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script type="text/javascript" src="script.js"></script>
 </head>
+<!-- TODO: add header and footer -->
 
 <body>
     <div id="left-side">
-        <section id="home-part">
-            <article>
-                <h1 style="display: inline">Hi, I'm </h1>
-                <h1 id="name" style="display: inline">Lulwah</h1>
-                <h2 id="position">Software Engineer</h2>
-                <p id="summary">
-                    I’m a recent Computer Science graduate specializing in Software Engineering. Currently, I’m
-                    interested in automation, full-stack development, artificial intelligence and everything in between.
-                </p>
-                <button id="contact" type="button">
-                    <a
-                        href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Say
-                        hello!</a>
-                </button>
-            </article>
-        </section>
+        <header>
+            <section id="home-part">
+                <article>
+                    <h1 style="display: inline">Hi, I'm </h1>
+                    <h1 id="name" style="display: inline">Lulwah</h1>
+                    <h2 id="position">Software Engineer</h2>
+                    <p id="summary">
+                        I’m a recent Computer Science graduate specializing in Software Engineering. Currently, I’m
+                        interested in automation, full-stack development, artificial intelligence and everything in
+                        between.
+                    </p>
+                    <button id="contact" type="button">
+                        <a
+                            href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Say
+                            hello!</a>
+                    </button>
+                </article>
+            </section>
+        </header>
         <section>
             <article id="about-me">
-                <h3>[about me]</h3>
+                <h3>/about me</h3>
                 <p id="arabic">انا اسمي لولوة</p>
                 <p>
                     My name is <b>Lulwah</b>. It means pearl in Arabic.</p>
                 <p>I'm a Software Engineer in the Philippines. I recently graduated with a Bachelor of Science in
                     <b>Computer Science with specialization in Software Engineering</b> from Far Eastern University
                     Alabang. </p>
-                <p>
+                <!-- <p>
                     <b>I'm currently looking
                         for opportunities to work on projects that will help me grow as a developer.</b>
-                </p>
+                </p> -->
                 <p><b>Technologies I've worked with:</b></p>
                 <ul>
                     <li>Java</li>
@@ -57,58 +61,103 @@
         </section>
         <section>
             <article id="projects">
-                <h3>[projects]</h3>
+                <h3>/projects</h3>
 
-                <!-- test -->
+                <!--  TODO: fix this -->
                 <div class="tabset">
                     <!-- Tab 1 -->
-                    <input type="radio" name="tabset" id="tab1" aria-controls="marzen" checked>
-                    <label for="tab1">Philhealth Form Generator</label>
+                    <input type="radio" name="tabset" id="tab1" aria-controls="pfg" checked>
+                    <label for="tab1">PFG</label>
                     <!-- Tab 2 -->
-                    <input type="radio" name="tabset" id="tab2" aria-controls="rauchbier">
+                    <input type="radio" name="tabset" id="tab2" aria-controls="eyeluminate">
                     <label for="tab2">Eye Luminate</label>
                     <!-- Tab 3 -->
-                    <input type="radio" name="tabset" id="tab3" aria-controls="dunkles">
+                    <input type="radio" name="tabset" id="tab3" aria-controls="riddle">
                     <label for="tab3">Riddle Me This</label>
 
+                    <input type="radio" name="tabset" id="tab4" aria-controls="reservation">
+                    <label for="tab4">Romantic Reservation</label>
+
                     <div class="tab-panels">
-                        <section id="marzen" class="tab-panel">
-                            <h4>Philhealth Form Generator</h4>
-                            <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean,
-                                rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that
-                                encourages another drink. The overall malt impression is soft, elegant, and complex,
-                                with a rich aftertaste that is never cloying or heavy.</p>
-                            <p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in
-                                March and lagered in cold caves over the summer. Modern versions trace back to the lager
-                                developed by Spaten in 1841, contemporaneous to the development of Vienna lager.
-                                However, the Märzen name is much older than 1841; the early ones were dark brown, and in
-                                Austria the name implied a strength band (14 °P) rather than a style. The German amber
-                                lager version (in the Viennese style of the time) was first served at Oktoberfest in
-                                1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the
-                                standard festival beer.</p>
+                        <section id="pfg" class="tab-panel">
+                            <img class="project-pic" src="images/pfg.png" alt="pfg">
+                            <div class="card">
+                                <div class="one">
+                                    <label>Title</label>
+                                    <p><b>Philhealth Form Generator</b></p>
+                                </div>
+                                <div class="two">
+                                    <label>Links</label>
+                                    <br>
+                                    <a href="">TBA</a>
+                                </div>
+                                <div class="three">
+                                    <label>Made with</label>
+                                    <p>Python</p>
+                                </div>
+                            </div>
+                            <label>About the project</label>
+                            <p> A Windows desktop application that generates one or multiple filled up Philhealth forms from a CSV file.</p>
+                        </section> 
+                        <section id="eyeluminate" class="tab-panel">
+                            <img class="project-pic" src="images/eyeluminate.png" alt="eyeluminate">
+                            <div class="card">
+                                <div class="one">
+                                    <label>Title</label>
+                                    <p><b>Eye Luminate</b></p>
+                                </div>
+                                <div class="two">
+                                    <label>Links</label>
+                                    <br>
+                                    <a href="https://github.com/llw4h/Eye-Luminate">github</a>
+                                </div>
+                                <div class="three">
+                                    <label>Made with</label>
+                                    <p>C#</p>
+                                </div>
+                            </div>
+                            <label>About the project</label>
+                            <p> A Windows desktop application that extracts the most eye-catching scenes of ads based on captured eye tracking data.</p>
                         </section>
-                        <section id="rauchbier" class="tab-panel">
-                            <h4>Eye Luminate</h4>
-                            <p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a
-                                balanced, complementary beechwood smoke character. Toasty-rich malt in aroma and flavor,
-                                restrained bitterness, low to high smoke flavor, clean fermentation profile, and an
-                                attenuated finish are characteristic.</p>
-                            <p><strong>History:</strong> A historical specialty of the city of Bamberg, in the
-                                Franconian region of Bavaria in Germany. Beechwood-smoked malt is used to make a
-                                Märzen-style amber lager. The smoke character of the malt varies by maltster; some
-                                breweries produce their own smoked malt (rauchmalz).</p>
+                        <section id="riddle" class="tab-panel">
+                            <img class="project-pic" id="long" src="images/riddle.png" alt="riddle">
+                            <div class="card">
+                                <div class="one">
+                                    <label>Title</label>
+                                    <p><b>Riddle Me This</b></p>
+                                </div>
+                                <div class="two">
+                                    <label>Links</label>
+                                    <br>
+                                    <a href="https://github.com/llw4h/Riddle-Me-This">github</a>
+                                </div>
+                                <div class="three">
+                                    <label>Made with</label>
+                                    <p>Java</p>
+                                </div>
+                            </div>
+                            <label>About the project</label>
+                            <p>An Android game app that quizzes the player on different riddles and keeps track of lives and score.</p>
                         </section>
-                        <section id="dunkles" class="tab-panel">
-                            <h4>Riddle Me This</h4>
-                            <p><strong>Overall Impression:</strong> A dark, strong, malty German lager beer that
-                                emphasizes the malty-rich and somewhat toasty qualities of continental malts without
-                                being sweet in the finish.</p>
-                            <p><strong>History:</strong> Originated in the Northern German city of Einbeck, which was a
-                                brewing center and popular exporter in the days of the Hanseatic League (14th to 17th
-                                century). Recreated in Munich starting in the 17th century. The name “bock” is based on
-                                a corruption of the name “Einbeck” in the Bavarian dialect, and was thus only used after
-                                the beer came to Munich. “Bock” also means “Ram” in German, and is often used in logos
-                                and advertisements.</p>
+                        <section id="reservation" class="tab-panel">
+                            <img class="project-pic" src="images/reservation.png" alt="reservation">
+                            <div class="card">
+                                <div class="one">
+                                    <label>Title</label>
+                                    <p><b>Romantic Reservation</b></p>
+                                </div>
+                                <div class="two">
+                                    <label>Links</label>
+                                    <br>
+                                    <a href="https://github.com/llw4h/Romantic-Reservation">github</a>
+                                </div>
+                                <div class="three">
+                                    <label>Made with</label>
+                                    <p>Javascript</p>
+                                </div>
+                            </div>
+                            <label>About the project</label>
+                            <p>A Restaurant reservation website inspired by a local restaurant.</p>
                         </section>
                     </div>
 

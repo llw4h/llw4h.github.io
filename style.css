@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap');
 
@@ -25,10 +25,11 @@ h3 {
     color: #0831FF;
 }
 
-h4 {
+.tab-panels p {
+    margin-top: 4px;
     color: #191919;
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
 }
 p,
 li {
@@ -90,7 +91,7 @@ a:hover img.default {
 }
 
 #right-side {
-    margin-left: 90%;
+    margin-left: 88%;
     position: fixed;
     top: 75%;
 }
@@ -106,7 +107,7 @@ a:hover img.default {
 
 #position {
     /* filter: drop-shadow(2px 2px 6px #0831FF); */
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Fira Code', monospace;
     color: #0831FF;
     font-weight: 278;
     font-size: 30px;
@@ -164,7 +165,7 @@ span {
     text-shadow: 1px 1px 1px #bdff58;
 }
 
-#contact:hover {
+#contact:hover{
     text-decoration: underline;
     /* background-color: #BDFF60;
     transition: 0.3s background; */
@@ -176,7 +177,7 @@ span {
 }
 
 #home-part {
-    margin-bottom: 26%;
+    margin-bottom: 30%;
 }
 
 
@@ -226,7 +227,8 @@ li::marker {
 .tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
 .tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
 .tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
-.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6) {
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6),
+.tabset>input:nth-child(13):checked~.tab-panels>.tab-panel:nth-child(7) {
     display: block;
 }
 
@@ -239,6 +241,8 @@ li::marker {
     border-bottom: 0;
     cursor: pointer;
     font-weight: 600;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 16px;
 }
 
 .tabset>label::after {
@@ -289,7 +293,38 @@ body {
 .tabset {
     max-width: 65em;
 }
+/* end */
 
-label {
-    font-family: 'Roboto Mono', sans-serif;
+#menu p{
+    font-size: 16px;
 }
+
+.tab-panels label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    color:#828282;
+}
+
+.tab-panels a {
+    font-size: 14px;
+}
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#long{
+    width: 25%;
+    height: 15%;
+}
+
+.project-pic{
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+    margin-top: 5px;
+    margin-bottom: 5%;
+    border-width: thin;
+    width: 60%;  
+    height: auto; 
+    border-radius: 5px;
+}
+
