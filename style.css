@@ -8,6 +8,10 @@
         visibility: hidden;
     }
 
+    #left-side {
+        margin: auto auto auto auto !important;
+    }
+
 }
 
 html {
