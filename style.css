@@ -86,7 +86,7 @@ body.dark {
         color: #b5b5bc;
     }
 
-    .menu-part a, .tab-panels p, .default-link:visited {
+    .menu-part a, .tab-panels p, .default-link:visited, .default-link:link{
         color: #f6f6f6;
     }
 
