@@ -84,7 +84,7 @@ body.dark {
         color: #b5b5bc;
     }
 
-    .menu-part a, .tab-panels p {
+    .menu-part a, .tab-panels p, .default-link:visited {
         color: #f6f6f6;
     }
 
@@ -403,4 +403,8 @@ footer {
     background: inherit;
     border: none;
     border-radius: 50px;
+}
+
+.default-link:visited{
+    color: #00010e;
 }
