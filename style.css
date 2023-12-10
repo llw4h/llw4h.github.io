@@ -14,7 +14,7 @@
     }
 
     .icons {
-        margin: auto;
+        margin: auto !important;
     }
 
     ul {
@@ -51,6 +51,7 @@ hr {
     left:0;
     font-size:1.5em;
     color:#09297f;
+    text-align: center;
   }
 
 html {
