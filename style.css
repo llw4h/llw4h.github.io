@@ -188,12 +188,12 @@ a:hover img.default {
     margin-top: 690px;
 }
 
-#name, h3 {
+#name, h3, li::marker, .tabset>label:hover,
+.tabset>input:focus+label {
     color: #09297f;
 }
 
 #position {
-    /* filter: drop-shadow(1px 1px 1px #89a0d7); */
     font-family: 'VT323', monospace;
     color: #09297f;
     font-size: 40px;
@@ -282,10 +282,6 @@ span {
     font-size: 20px;
 }
 
-li::marker {
-    color: #09297f;
-}
-
 #active_home {
     display: none;
 }
@@ -335,11 +331,6 @@ li::marker {
     background: #8d8d8d;
 }
 
-.tabset>label:hover,
-.tabset>input:focus+label {
-    color: #09297f;
-}
-
 .tabset>label:hover::after,
 .tabset>input:focus+label::after,
 .tabset>input:checked+label::after {
@@ -379,8 +370,12 @@ li::marker {
 }
 
 #long {
-    width: 25%;
-    height: 15%;
+    max-width: 45%;
+    height: auto;
+} 
+
+.one, .two, .three {
+    padding: 5px;
 }
 
 .project-pic {
@@ -388,7 +383,7 @@ li::marker {
     margin-top: 5px;
     margin-bottom: 5%;
     border-width: thin;
-    width: 60%;
+    max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
@@ -407,6 +402,6 @@ footer {
     border-radius: 50px;
 }
 
-.default-link:visited{
+.default-link:visited, .default-link:link{
     color: #00010e;
 }
