@@ -96,6 +96,17 @@ body.dark {
         border-bottom: 1px solid #00010e;
         margin-bottom: -1px;
     }
+
+    .tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+    background: #0831FF;
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label, li::marker, hr::before{
+    color:#0831FF;
+}
 }
 
 h1 {
