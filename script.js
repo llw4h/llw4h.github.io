@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function (event) {
-    var dataText = ["developer"];
+    var dataText = ["Developer"];
 
     function typeWriter(text, i, fnCallback) {
         if (i < (text.length)) {
@@ -27,4 +27,42 @@ document.addEventListener('DOMContentLoaded', function (event) {
         }
     }
     StartTextAnimation(0);
+});
+
+// toggle
+document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', function () {
+        // Toggle between light and dark themes
+        // 
+        var path;
+        if(this.getAttribute("src") === "images/sun-light.svg")
+            path = "images/half-moon.svg";
+        else
+            path = "images/sun-light.svg";
+        this.setAttribute("src", path);
+    // 
+        body.classList.toggle('light');
+        body.classList.toggle('dark');
+
+        // Save the current theme preference to local storage
+        const currentTheme = body.classList.contains('dark') ? 'dark' : 'light';
+        localStorage.setItem('theme', currentTheme);
+    });
+
+    // Check for a previously saved theme preference in local storage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+    } else {
+        // Use the browser's preference as the default theme
+        const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (userPrefersDark) {
+            body.classList.add('dark');
+        } else {
+            body.classList.add('light');
+        }
+    }
 });

@@ -10,38 +10,59 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <script type="text/javascript" src="script.js"></script>
 </head>
-<!-- TODO: add header and footer -->
 
 <body>
     <div id="left-side">
+        <input id="themeToggle" type="image" src="images/half-moon.svg" />
+        <!-- <button id="themeToggle" type="button">
+            <img class="default" src="images/half-moon.svg" alt="dark-mode"/>
+        </button> -->
         <header>
             <section id="home-part">
                 <article>
                     <h1 style="display: inline">Hi, I'm </h1>
                     <h1 id="name" style="display: inline">Lulwah</h1>
-                    <h2 id="position">developer</h2>
+                    <h2 id="position">Developer</h2>
                     <p id="summary">
                         I’m a recent Computer Science graduate specializing in Software Engineering. Currently, I’m
                         interested in automation, full-stack development and everything in
                         between. 
                     </p>
-                    <button id="contact" type="button">
+                    <div class="icons">
+                        <a target="_blank" href="https://github.com/llw4h">
+                            <img class="default" src="images/github.png" alt="github" />
+                            <img class="hover" src="images/github_hover.png" alt="github" />
+                        </a>
+                        <a
+                            href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
+                            <!-- note to future self: the email is encrypted with something, idk what specifically but prob something about character ascii conversion; supposedly good for hiding from email scrappers-->
+                            <img class="default" src="images/mail.png" alt="email" />
+                            <img class="hover" src="images/mail_hover.png" alt="email" />
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/lulwah-n-4241b0244/">
+                            <img class="default" src="images/linkedin.png" alt="linkedin" />
+                            <img class="hover" src="images/linkedin_hover.png" alt="linkedin" />
+                        </a>
+                    </div>
+                    <!-- <button id="contact" type="button">
                         <a
                             href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">Say
                             hello!</a>
-                    </button>
+                    </button> -->
                 </article>
             </section>
         </header>
         <section>
             <article id="about-me">
-                <h3>/about me</h3>
+                <div class="section">
+                    <h3>> About me</h3>
+                </div>
                 <p id="arabic">انا اسمي لولوة</p>
                 <p>
-                    My name is <b>Lulwah</b>. It means pearl in Arabic.</p>
-                <p>I'm a Software Engineer in the Philippines. I recently graduated with a Bachelor of Science in
-                    <b>Computer Science with specialization in Software Engineering</b> from Far Eastern University
-                    Alabang. </p>
+                    My name is Lulwah. It means pearl in Arabic. </p>
+                <p>Born and raised in Saudi Arabia, now a developer based in the Philippines. I recently graduated with a Bachelor of Science in
+                    <strong>Computer Science with specialization in Software Engineering</strong>.</p>
+                    <p>I have a white dog named Mochi (もち) and I also crochet!</p>
                 <p></br><b>Technologies I've worked with:</b></p>
                 <ul>
                     <li>Java</li>
@@ -55,11 +76,13 @@
                 </ul>
             </article>
         </section>
+        <hr>
         <section>
             <article id="projects">
-                <h3>/projects</h3>
-
-                <!--  TODO: fix this -->
+                <div class="section">
+                    <h3>> Projects</h3>
+                    <hr>
+                </div>
                 <div class="tabset">
                     <!-- Tab 1 -->
                     <input type="radio" name="tabset" id="tab1" aria-controls="pfg" checked>
@@ -85,7 +108,7 @@
                                 <div class="two">
                                     <label>Links</label>
                                     <br>
-                                    <a href="">TBA</a>
+                                    <a href="https://github.com/llw4h/Philhealth-Form-Generator">github</a>
                                 </div>
                                 <div class="three">
                                     <label>Made with</label>
@@ -164,40 +187,28 @@
 
     <div id="right-side">
         <nav id="menu">
-            <div id="home">
+            <div class="menu-part">
                 <p style="display: inline">[</p>
                 <a href="#top">home</a>
                 <p style="display: inline">]</p>
             </div>
-            <div id="about">
+            <div class="menu-part">
                 <p style="display: inline">[</p>
                 <a href="#about-me">about me</a>
                 <p style="display: inline">]</p>
             </div>
-            <div id="projects">
+            <div class="menu-part">
                 <p style="display: inline">[</p>
                 <a href="#projects">projects</a>
                 <p style="display: inline">]</p>
             </div>
-            <div id="menu-icons">
-                <a target="_blank" href="https://github.com/llw4h">
-                    <img class="default" src="images/github.png" alt="github" />
-                    <img class="hover" src="images/github_hover.png" alt="github" />
-                </a>
-                <a
-                    href="mailto:&#108;&#109;&#110;&#101;&#114;&#112;&#105;&#111;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">
-                    <!-- note to future self: the email is encrypted with something, idk what specifically but prob something about character ascii conversion; supposedly good for hiding from email scrappers-->
-                    <img class="default" src="images/mail.png" alt="email" />
-                    <img class="hover" src="images/mail_hover.png" alt="email" />
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/lulwah-n-4241b0244/">
-                    <img class="default" src="images/linkedin.png" alt="linkedin" />
-                    <img class="hover" src="images/linkedin_hover.png" alt="linkedin" />
-                </a>
-            </div>
         </nav>
     </div>
 
+    <footer>
+        <a href="#top">Back to Top</a>
+        <p>&copy; 2023 Lulwah N.</p>
+    </footer>
 </body>
 
 </html>
