@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
     StartTextAnimation(0);
 });
 
-// toggle
+// light/dark toggle
 document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('themeToggle');
     const body = document.body;

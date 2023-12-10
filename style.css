@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anybody&family=DotGothic16&family=Oxanium&family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
 
 
 @media screen and (max-width: 950px) {
@@ -278,7 +279,7 @@ span {
 }
 
 #arabic {
-    font-family: 'Noto Sans Arabic', sans-serif;
+    font-family:'Cairo', sans-serif;
     font-size: 20px;
 }
 
