@@ -191,7 +191,7 @@ a:hover img.default {
 }
 
 #position {
-    filter: drop-shadow(1px 1px 1px #89a0d7);
+    /* filter: drop-shadow(1px 1px 1px #89a0d7); */
     font-family: 'VT323', monospace;
     color: #09297f;
     font-size: 40px;
